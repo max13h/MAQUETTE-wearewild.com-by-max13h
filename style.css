@@ -1,0 +1,228 @@
+
+@font-face {
+    font-family: 'gelicabold';
+    src: url('./font/fontspring-demo-gelica-bold-webfont.woff2') format('woff2'),
+         url('./font/fontspring-demo-gelica-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gelicamedium';
+    src: url('./font/fontspring-demo-gelica-medium-webfont.woff2') format('woff2'),
+         url('./font/fontspring-demo-gelica-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gelicaregular';
+    src: url('./font/fontspring-demo-gelica-regular-webfont.woff2') format('woff2'),
+         url('./font/fontspring-demo-gelica-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'futura_ptbold';
+    src: url('./font/futuraptbold-webfont.woff2') format('woff2'),
+         url('./font/futuraptbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'futura_ptmedium';
+    src: url('./font/futuraptmedium-webfont.woff2') format('woff2'),
+         url('./font/futuraptmedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    /* background-color: black; */
+    font-family:futura_ptmedium, sans-serif ;
+    list-style: none;
+    
+}
+section {
+    position: relative;
+    height: 100vh;
+    background: url(./img/1677230705-ts_homepage.jpg) center no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+#LOGO {
+    width: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 10vh;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+nav * {
+    display: flex;
+    width: auto;
+}
+
+ul li {
+    padding: 15px;
+}
+
+
+
+.arrow-down::after {
+    content: "";
+    background-image: url(./img/arrow-down-s-line.svg);
+    background-position: center;
+    background-size: contain;
+    filter: invert(100%);
+    width: 20px;
+    padding-left: 5px;
+    
+}
+
+.navbar *:hover {
+    background-color: rgb(204,230,255,0.1);
+    border-radius: 10px;
+    transition: all 200ms;
+}
+
+h1 {
+    font-family: gelicabold;
+    font-size: 5em;
+}
+section p {
+    font-size: 1.2rem;
+}
+
+
+.firstElement {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    top: 220px;
+    left: 209px;
+}
+.firstElement * {
+    margin: 10px;
+}
+.btnGetStarted {
+    width: auto;
+    height: 100%;
+    background-color: #ff7402;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-family:futura_ptbold, sans-serif ;
+}
+.btnGetStarted::after {
+    content: '';
+    background: url(./img/arrow-right-line.svg) no-repeat center;
+    background-size: cover;
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-left: 6px;
+    filter: invert(100%);
+}
+
+.btnGetStarted:hover  {
+    transform: scale(107%);
+    transition: transform 200ms;
+}
+
+
+
+
+
+.rightNav {
+    width: auto;
+    align-items: center;
+}
+
+
+.btnRight {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    font-family:futura_ptbold, sans-serif ;
+
+    
+}
+.btnRight::after {
+    content: '';
+    background: url(./img/arrow-right-line.svg) no-repeat center;
+    background-size: cover;
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-left: 6px;
+}
+.btnRight:hover  {
+    transform: scale(107%);
+    transition: transform 200ms;
+}
+
+.btnProfil {
+    margin: 0 20px;
+}
+
+
+.rightNav .round-background {
+    position: relative;
+    z-index: 2;
+}
+.rightNav .round-background::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.round-background:hover {
+    transform: scale(107%);
+    transition: transform 200ms;
+}
